@@ -47,6 +47,11 @@ header{
     margin-bottom: 2em;
 }
 
+.open-nav,
+.close-nav{
+    display: none;
+}
+
 .header-container{
     display: flex;
     align-items: center;
@@ -185,12 +190,12 @@ main{
     letter-spacing: 1.5px;
 }
 
-.actual-price{
+.actual--price{
     margin-top: .2em;
     color: var(--clr-grayish-blue);
 }
 
-.actual-price::after{
+.actual--price::after{
     content: '';
     display: block;
     width: 3.6em;
@@ -247,4 +252,149 @@ main{
 .btn-image{
     width: 20px;
     margin-right: 1em;
+}
+
+
+@media(max-width: 420px){
+    body{
+        width: 100%;
+    }
+
+    header{
+        border: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+
+    .logo-image{
+        margin-left: 3.2em;
+    }
+
+    .my-image{
+        margin-left: 1.5em;
+        margin-right: 1em;
+    }
+
+    .nav-container{
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 60%;
+        background-color: var(--clr-white);
+        transform: translateX(-100%);
+    }
+
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+    }
+
+    .nav-item{
+        color: var(--clr-black);
+        font-weight: 800;
+        margin-bottom: 1em;
+    }
+
+    .nav-item:first-child{
+        margin-top: 6em;
+    }
+
+    .open-nav,
+    .close-nav{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 2.4em 1.4em;
+    }
+
+    /* main */
+
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+
+    /* image */
+
+    .thumbnail-image{
+        display: none;
+    }
+
+    .image-section{
+        width: 100%;
+        padding-inline: 0;
+    }
+
+    /* info */
+
+    .info-section{
+        margin: 0;
+        padding: 0 1.2em;
+    }
+
+    .info-heading{
+        margin: 1em 0;
+    }
+
+    .info-title{
+        font-size: 1.85em;
+    }
+    
+    .info-desc{
+        width: 100%;
+        letter-spacing: 1px;
+    }
+
+    .info-price{
+        justify-content: space-between;
+    }
+
+    .price{
+        margin-right: .45em;
+    }
+
+    .actual-price{
+        display: flex;
+        align-items: center;
+    }
+
+
+    .actual--price{
+        display: flex;
+        flex-direction: column;
+        margin-top: -.8em;
+    }
+
+    .btn-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .counter{
+        padding: 1em 1.2em;
+    }
+
+    .increment{
+        margin-left: 5em;
+    }
+
+    .decrement{
+        margin-right: 5em;
+    }
+
+    .btn{
+        margin: 0;
+        margin-top: 1em;
+        margin-bottom: 4em;
+        padding: 1em 6em;
+    }
+
 }
