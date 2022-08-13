@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/logo.svg" alt="logo" class="logo-image">
+            <nav class="nav-container">
+                <ul class="nav-list">
+                    <li class="nav-item">Collection</li>
+                    <li class="nav-item">Men</li>
+                    <li class="nav-item">Women</li>
+                    <li class="nav-item">About</li>
+                    <li class="nav-item">Contact</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="cart-container">
+            <img src="images/icon-cart.svg" alt="cart image" class="cart-image">
+            <img src="images/Avatar.png" alt="my image" class="my-image">
+        </div>
+    </header>
+
+    <main>
+        <section class="image-section">
+            <div class="main-image">
+                <img class="product-image" src="images/image-product-1.jpg" alt="Product-1">
+                <img class="product-image" src="images/image-product-2.jpg" alt="Product-2" hidden>
+                <img class="product-image" src="images/image-product-3.jpg" alt="Product-3" hidden>
+                <img class="product-image" src="images/image-product-4.jpg" alt="Product-4" hidden>
+            </div>
+            <div class="thumbnail-image">
+                <img class="small-image" src="images/image-product-1-thumbnail.jpg" alt="Product-Thumbnail-1">
+                <img class="small-image" src="images/image-product-2-thumbnail.jpg" alt="Product-Thumbnail-2">
+                <img class="small-image" src="images/image-product-3-thumbnail.jpg" alt="Product-Thumbnail-3">
+                <img class="small-image" src="images/image-product-4-thumbnail.jpg" alt="Product-Thumbnail-4">
+            </div>
+        </section>
+
+        <section class="info-section">
+            <p class="info-heading uppercase">Sneaker Company</p>
+            <h1 class="info-title">Fall Limited <span class="block-text">Sneakers</span></h1>
+            <p class="info-desc">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+            <div class="info-price">
+                <div>
+                    <p class="price">$125.00</p>
+                    <p class="actual-price">$250.00</p>
+                </div> 
+                <p class="discount">50%</p>
+            </div>
+
+            <div class="btn-container">
+                <div class="counter">
+                    <img src="images/icon-minus.svg" alt="minus" class="decrement">
+                    <p class="count">3</p>
+                    <img src="images/icon-plus.svg" alt="plus" class="increment">
+                </div>
+                <p class="btn">
+                   <img src="images/icon-cart.svg" alt="cart" class="btn-image"> Add to cart
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
