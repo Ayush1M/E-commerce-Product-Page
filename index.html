@@ -14,9 +14,9 @@
     <header>
         <div class="header-container">
             <img src="images/logo.svg" alt="logo" class="logo-image">
-            <img src="images/icon-menu.svg" alt="menu" class="open-nav">
-            <nav class="nav-container">
-                <img src="images/icon-close.svg" alt="close" class="close-nav">
+            <button aria-label="open navigation" class="open-nav">&#9776</button>
+            <nav class="nav-container navigation-open">
+                <button aria-label="close navigation" class="close-nav">&times;</button>
                 <ul class="nav-list">
                     <li class="nav-item">Collection</li>
                     <li class="nav-item">Men</li>
@@ -73,5 +73,7 @@
             </div>
         </section>
     </main>
+
+    <script src="navigation.js"></script>
 </body>
 </html>
