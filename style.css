@@ -175,6 +175,10 @@ main{
     border-radius: 8px;
 }
 
+.carousel-icon{
+    display: none;
+}
+
 /* info-section */
 
 .info-section{
@@ -389,6 +393,34 @@ main{
     .image-section{
         width: 100%;
         padding-inline: 0;
+    }
+
+    .product-image,
+    .carousel-item-hidden{
+        display: none;
+    }
+
+    .carousel-item-visible{
+        display: block;
+    }
+
+    .carousel-icon{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        top: 40%;
+        transform: translateY(-50%);
+        z-index: 90;
+    }
+
+    .carousel-btn{
+        padding: .8em 1em;
+        margin: 0 .6em;
+        border-radius: 50%;
+        background-color: var(--clr-white);
     }
 
     /* info */
