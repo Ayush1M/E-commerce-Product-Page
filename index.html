@@ -36,16 +36,16 @@
     <main>
         <section class="image-section">
             <div class="main-image">
-                <img class="product-image" src="images/image-product-1.jpg" alt="Product-1">
-                <img class="product-image" src="images/image-product-2.jpg" alt="Product-2" hidden>
-                <img class="product-image" src="images/image-product-3.jpg" alt="Product-3" hidden>
-                <img class="product-image" src="images/image-product-4.jpg" alt="Product-4" hidden>
+                <img class="product-image overlay-1" src="images/image-product-1.jpg" id="product1" alt="Product-1">
+                <img class="product-image overlay-2" src="images/image-product-2.jpg" id="product2" alt="Product-2" hidden>
+                <img class="product-image overlay-3" src="images/image-product-3.jpg" id="product3" alt="Product-3" hidden>
+                <img class="product-image overlay-4" src="images/image-product-4.jpg" id="product4" alt="Product-4" hidden>
             </div>
-            <div class="thumbnail-image">
-                <img class="small-image" src="images/image-product-1-thumbnail.jpg" alt="Product-Thumbnail-1">
-                <img class="small-image" src="images/image-product-2-thumbnail.jpg" alt="Product-Thumbnail-2">
-                <img class="small-image" src="images/image-product-3-thumbnail.jpg" alt="Product-Thumbnail-3">
-                <img class="small-image" src="images/image-product-4-thumbnail.jpg" alt="Product-Thumbnail-4">
+            <div class="thumbnail-image" role="tablist">
+                <img aria-selected="true" role="tab" class="small-image" id="thumbnail1" src="images/image-product-1-thumbnail.jpg" alt="Product-Thumbnail-1">
+                <img aria-selected="false" role="tab" class="small-image" id="thumbnail2" src="images/image-product-2-thumbnail.jpg" alt="Product-Thumbnail-2">
+                <img aria-selected="false" role="tab" class="small-image" id="thumbnail3" src="images/image-product-3-thumbnail.jpg" alt="Product-Thumbnail-3">
+                <img aria-selected="false" role="tab" class="small-image" id="thumbnail4" src="images/image-product-4-thumbnail.jpg" alt="Product-Thumbnail-4">
             </div>
         </section>
 
@@ -75,5 +75,6 @@
     </main>
 
     <script src="navigation.js"></script>
+    <script src="tabs.js"></script>
 </body>
 </html>
