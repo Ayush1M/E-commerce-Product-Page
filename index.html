@@ -28,9 +28,40 @@
         </div>
 
         <div class="cart-container">
-            <img src="images/icon-cart.svg" alt="cart image" class="cart-image">
+            <img src="images/icon-cart.svg" alt="cart image" class="cart-image" id="cart-image">
+            <span class="cart-amount" id="cart-amount show">0</span>
             <img src="images/Avatar.png" alt="my image" class="my-image">
         </div>
+
+        <div class="cart-items">
+           <div class="cart-header ">
+              <h3 class="cart-header-heading">Cart</h3>
+              <div class="cart-content">
+                <div class="cart-empty show">
+                Your cart is empty
+               </div>
+               <div class="center">
+                  <div class="cart-full show">
+                    <div>
+                    <div class="flex--container">
+                        <img src="images/image-product-1-thumbnail.jpg" alt="item image" class="cart-full-image">
+                      <div class="flex-container">
+                        <h3 class="cart-full-title">Fall Limited Edition Sneakers</h3>
+                        <p class="cart-full-price"> $125.00 x <span id="quantity">2</span> <span id="total"      class="bold">125.00</span></p>
+                       
+                      </div>
+                      <img src="images/icon-delete.svg" alt="delete button" class="cart-delete-btn" id="delete-btn">
+                   </div>
+                    
+                    <button class="cart-full-checkout-btn bttn"> Checkout </button>
+                  </div>
+                  </div>
+                  
+                </div>
+               </div>
+            </div>
+        </div>
+
     </header>
 
     <main>
@@ -68,11 +99,11 @@
 
             <div class="btn-container">
                 <div class="counter">
-                    <img src="images/icon-minus.svg" alt="minus" class="decrement">
-                    <p class="count">3</p>
-                    <img src="images/icon-plus.svg" alt="plus" class="increment">
+                    <img src="images/icon-minus.svg" alt="minus" class="decrement" onclick="decrement()">
+                    <p class="count" id="count-el">0</p>
+                    <img src="images/icon-plus.svg" alt="plus" class="increment" onclick="increment()">
                 </div>
-                <p class="btn">
+                <p class="btn" id="btn-image">
                    <img src="images/icon-cart.svg" alt="cart" class="btn-image"> Add to cart
                 </p>
             </div>
