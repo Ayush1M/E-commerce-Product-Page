@@ -5,8 +5,22 @@ const cartEmpty = document.querySelector(".cart-empty")
 const cartFull = document.querySelector(".cart-full")
 const cartQuantity =document.getElementById("quantity")
 const cartTotal = document.getElementById("total")
+const cartIcon = document.querySelector(".cart-image")
 let count = 0
 
+
+function cartContent(){
+    if(count > 0){
+        cartIcon.addEventListener("click", ()=>{
+            cartFull.classList.add("show")
+        })
+    }
+    else{
+        cartFull.classList.remove("show")
+    }
+}
+
+cartContent()
 
 function removeOvarlay(){
     headerCart.classList.remove("d-block")
@@ -19,33 +33,31 @@ function generalStyle() {
   }
   
 document.getElementById("btn-image").addEventListener("click", function (e) {
-      generalStyle()
-    
     if (count > 0) {
-        cartQuantity.textContent = `${count}`
+        cartAmount.textContent = count
+        cartQuantity.textContent = count
         cartTotal.textContent = `$${count * 125}`
+        
 
         document.querySelector(".cart-delete-btn").addEventListener("click", function (e) {
-          cartFull.classList.remove("show")
-          cartEmpty.classList.add("show")
           generalStyle()
+          cartAmount.classList.remove("show")
         })
       }
      removeOvarlay()
      showContent()
     })
 
-   const cartIcon = document.querySelector(".cart-image")
+    
    const headerCart = document.querySelector(".cart-header")  
 
-    cartIcon.addEventListener("click", function () {
+    cartIcon.addEventListener("click", function (e) {
     headerCart.classList.toggle("d-block")
     headerCart.classList.toggle("height")
+    
 })
 
-
 function increment(){
-    
     if(count < 8){
         count += 1
         countEl.textContent = count
@@ -56,25 +68,26 @@ function increment(){
 }
 
 function decrement(){
-    showContent()
     if(count <= 0){
         countEl.textContent = 0
     }else{
         count -= 1
         countEl.textContent = count
-    }
-    
+    }  
+    showContent()  
 }
 
 function showContent(){
    document.getElementById("btn-image").addEventListener("click", ()=>{
     if(count > 0){
+        cartAmount.classList.add("show")
         cartEmpty.classList.remove("show")
         cartFull.classList.add("show")
        
     }else{
         cartEmpty.classList.add("show")
         cartFull.classList.remove("show")
+        cartAmount.classList.remove("show")
     }
    })
 }
