@@ -17,6 +17,7 @@ This Project is a E-coomerce Product Page with Cart Functionality and switching 
 * To switch large product image by clicking on thumbnail images.
 * Add items to the cart.
 * Remove items from the cart.
+* Add a Carousel for mobile devices to slide through images.
 
 ## Screenshot
 
