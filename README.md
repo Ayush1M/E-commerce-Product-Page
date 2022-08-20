@@ -13,11 +13,10 @@
 This Project is a E-coomerce Product Page with Cart Functionality and switching between images.
 
 ### Goal of the Project
-* The Goal of this is to use the deckofcards API to call cards.
-* To draw two cards one for myself and other one for computer.
-* Display the remaining cards when we draw two new cards.
-* Disable the draw button when remaining cards is zero.
-* Display the winner.
+* TO create a Responsive E-commerce Product page with cart Functionality.
+* To switch large product image by clicking on thumbnail images.
+* Add items to the cart.
+* Remove items from the cart.
 
 ## Screenshot
 
