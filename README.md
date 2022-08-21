@@ -29,4 +29,4 @@ This Project is a E-commerce Product Page with Cart Functionality and switching 
 ## Technologies I Used
 * Semantic HTML5.
 * CSS.
-* Javascript.
+* JavaScript.
