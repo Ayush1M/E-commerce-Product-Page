@@ -21,7 +21,7 @@ This Project is a E-commerce Product Page with Cart Functionality and switching 
 
 ![](images/E-commerce-product-page.png)
 
-Mobile
+## Mobile
 
 ![](images/E-commerce-product-page-mobile.png)
 
