@@ -6,10 +6,9 @@
       * [Goal of the project](#goal-of-the-project)
       * [Screenshot](#screenshot)
  * [Technologies I Used](#technologies-i-used)
- * [Acknowledgement](#acknowledgement)
 
 # Overview of the Project
-This Project is a E-coomerce Product Page with Cart Functionality and switching between images.
+This Project is a E-commerce Product Page with Cart Functionality and switching between images.
 
 ### Goal of the Project
 * TO create a Responsive E-commerce Product page with cart Functionality.
@@ -20,11 +19,14 @@ This Project is a E-coomerce Product Page with Cart Functionality and switching 
 
 ## Screenshot
 
+![](images/E-commerce-product-page.png)
+
+## Mobile
+
+![](images/E-commerce-product-page-mobile.png)
 
 
 ## Technologies I Used
 * Semantic HTML5.
 * CSS.
-* Javascript.
-
-## Acknowledgment
+* JavaScript.
