@@ -23,7 +23,7 @@ This Project is a E-commerce Product Page with Cart Functionality and switching 
 
 ## Mobile
 
-![](images/E-commerce-product-page-mobile.png)
+<img src="images/E-commerce-product-page-mobile.png" width=340px >
 
 
 ## Technologies I Used
